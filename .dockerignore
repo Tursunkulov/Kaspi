@@ -1,0 +1,14 @@
+.git
+node_modules
+.env
+.env.backup
+keypair.json
+device.json
+ecdh-keypair.json
+keypair.json.bak
+device.json.bak
+last-session.json
+logs
+tracked-payments.json
+webhook-retries.json
+webhooks.json

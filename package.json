@@ -1,0 +1,49 @@
+{
+  "name": "kaspi-pos-automation",
+  "version": "1.1.0",
+  "type": "module",
+  "description": "Автоматизация платежей для POS-систем через Kaspi Pay API",
+  "main": "server.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tursunkulov/Kaspi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tursunkulov/Kaspi/issues"
+  },
+  "homepage": "https://github.com/Tursunkulov/Kaspi#readme",
+  "keywords": [
+    "kaspi",
+    "kaspi-pay",
+    "pos",
+    "payment",
+    "automation",
+    "qr-payment",
+    "invoice"
+  ],
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/**/*.test.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "regen:keypair": "node scripts/regen-keypair.js",
+    "regen:device": "node scripts/regen-device.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^4.18.2",
+    "node-fetch": "^2.7.0"
+  },
+  "overrides": {
+    "qs": "6.16.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.3.0",
+    "prettier": "^3.8.3"
+  }
+}
